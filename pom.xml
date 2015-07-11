@@ -10,21 +10,20 @@
     <version>1.580.1</version>
     <relativePath/>
   </parent>
-  <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>global-shell-hook</artifactId>
   <version>1.0</version>
   <packaging>hpi</packaging>
 
   <name>Global Shell Hook Plugin</name>
   <description>Global Shell Hook</description>
-  <url>https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin</url>
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/Global+Shell+Hook+Plugin</url>
   <licenses>
     <license>
       <name>MIT License</name>
       <url>http://opensource.org/licenses/MIT</url>
     </license>
   </licenses>
-  <!-- If you want this to appear on the wiki page:
+
   <developers>
     <developer>
       <id>notona</id>
@@ -32,7 +31,7 @@
       <email>notona@gmail.com</email>
     </developer>
   </developers>
-  -->
+
   <!-- Assuming you want to host on @jenkinsci:
   <scm>
     <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
