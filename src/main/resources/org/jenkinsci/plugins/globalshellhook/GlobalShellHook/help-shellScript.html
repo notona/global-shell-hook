@@ -2,11 +2,11 @@
   This shell Script will be executed at the end of each jobs.
 </div>
 <div>
-  For example, if you want to execute curl when build result was failure, you have to edit like this.
+  For example, if you want to echo any text at the end of each job's logs when build was failed, edit like this.
   <pre>
 RESULT=${RESULT:-"other"}
 if [ ${RESULT} = "FAILURE" ]; then
-    curl "http://example.com"
+    echo "${JOB_NAME} - ${RESULT}"
 fi
   </pre>
 </div>
