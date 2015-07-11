@@ -12,6 +12,13 @@ $ mvn install
 ```
 after that,  deploy ./target/pluginname.hpi to use with jenkins
 
+## usage
+
+![./screenshot1.png](./screenshot1.png)
+![./screenshot2.png](./screenshot2.png)
+![./screenshot3.png](./screenshot3.png)
+
+
 ### Licence
 MIT License
 
