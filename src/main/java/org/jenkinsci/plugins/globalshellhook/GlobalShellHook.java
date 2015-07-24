@@ -8,6 +8,7 @@ import hudson.model.TaskListener;
 import hudson.model.listeners.RunListener;
 import hudson.model.AbstractProject;
 import jenkins.model.Jenkins;
+import jenkins.model.JenkinsLocationConfiguration;
 
 import net.sf.json.JSONObject;
 
@@ -39,6 +40,8 @@ public class GlobalShellHook extends RunListener<Run<?, ?>>
     ProcessBuilder pb = new ProcessBuilder("/bin/sh", "-c", shellScript);
     pb.redirectErrorStream();
     Map<String, String> env = pb.environment();
+    env.put("BUILD_NUMBER", String.valueOf(run.getNumber()));
+    env.put("BUILD_URL", JenkinsLocationConfiguration.get().getUrl() + run.getUrl());
     env.put("RESULT", run.getResult().toString());
     env.put("JOB_NAME", run.getParent().getName());
 
